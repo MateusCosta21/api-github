@@ -1,0 +1,27 @@
+# Arquivos
+.env
+.phpunit.result.cache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios
+/vendor/
+/node_modules/
+/public/storage/
+/storage/
+/storage/*.key
+.homestead.yaml
+/homestead.json
+Homestead.yaml
+Homestead.json
+.idea/
+.phpstorm.meta.php
+.phpunit/
+.pu
+/.vagrant/
+Homestead.json
+/.idea
+/postgres-data/
+docker-compose.yml
