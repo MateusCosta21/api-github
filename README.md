@@ -25,8 +25,14 @@ Com o git instalado e em um diretório da sua escolha, baixe o projeto:
 git clone https://github.com/MateusCosta21/api-github
 ```
 
+
+
 ##### Suba o serviço
-###### Primeiro verifique se a pasta "postgres-data" está criada na raiz do projeto, ela vai servir para persistência dos dados do PostgreSQL.
+
+Primeiro copie o docker-compose-example para conseguir executar o container
+```sh
+cp docker-compose-example.yml docker-compose.yml
+```
 
 Em seguida, com o Docker-compose instalado, execute esse comando na raiz do projeto:
 
