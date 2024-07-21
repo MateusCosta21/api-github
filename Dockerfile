@@ -12,6 +12,7 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-install pdo pdo_pgsql
 RUN apt-get update -y
 
+RUN a2enmod rewrite
 
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 
