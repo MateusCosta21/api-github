@@ -18,5 +18,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/{username}', [GitHubController::class, 'getUser']);
-Route::get('/user/{username}/followings', [GitHubController::class, 'getFollowings']);
