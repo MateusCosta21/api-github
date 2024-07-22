@@ -9,9 +9,6 @@ yarn-error.log*
 # Diretórios
 /vendor/
 /node_modules/
-/public/storage/
-/storage/
-/storage/*.key
 .homestead.yaml
 /homestead.json
 Homestead.yaml
