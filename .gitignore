@@ -22,3 +22,14 @@ Homestead.json
 /.idea
 /postgres-data/
 docker-compose.yml
+# Excluir conteúdo, mas incluir os diretórios vazios
+/storage/app/*
+!/storage/app/.gitkeep
+/storage/framework/cache/*
+!/storage/framework/cache/.gitkeep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+/storage/framework/views/*
+!/storage/framework/views/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
