@@ -64,7 +64,7 @@ composer install
 São elas storage/logs e storage/framework, como estamos num ambiente de testes vamos dar todas as permissões, apenas execute:
 
 ```sh
-chmod -R 777 storage/logs storage/framework
+chmod -R 777 storage/
 ```
 
 ##### Pra finalizar vamos rodar as migrations e gerar a chave da aplicação
