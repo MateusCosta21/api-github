@@ -47,7 +47,7 @@ Com o container rodando, execute esse comando na raiz do projeto:
 docker exec -it laravel-api bash
 ```
 ##### Configure o .env
-Se não tiver alterado nada, o .env ja vai estar configurado depois de rodar o seguinte comando:
+Gere o .env com o comando abaixo e altere o DB_HOST para adicionar seu ip correspondente ao banco:
 
 ```sh
 cp .env.example .env
@@ -67,7 +67,7 @@ São elas storage/logs e storage/framework, como estamos num ambiente de testes 
 chmod -R 777 storage/logs storage/framework
 ```
 
-##### Pra finalizar vamos rodar as migrations, a seeder e gerar a chave da aplicação
+##### Pra finalizar vamos rodar as migrations e gerar a chave da aplicação
 Caso não tenha alterado credenciais nos arquivo do docker basta rodar os comandos de sempre:
 
 ```sh
