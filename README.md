@@ -29,53 +29,11 @@ git clone https://github.com/MateusCosta21/api-github
 
 ##### Suba o serviço
 
-Primeiro copie o docker-compose-example para conseguir executar o container
-```sh
-cp docker-compose-example.yml docker-compose.yml
-```
-
-Em seguida, com o Docker-compose instalado, execute esse comando na raiz do projeto:
+Execute o sh abaixo para subir os serviços referente ao projeto
 
 ```sh
-docker-compose up -d
+./setup.sh
 ```
 
-##### Acesse o container
-Com o container rodando, execute esse comando na raiz do projeto:
-
-```sh
-docker exec -it laravel-api bash
-```
-##### Configure o .env
-Gere o .env com o comando abaixo e altere o DB_HOST para adicionar seu ip correspondente ao banco:
-
-```sh
-cp .env.example .env
-```
-
-##### Instale as dependências
-Agora você pode executar:
-
-```sh
-composer install
-```
-
-##### Dê permissões as pastas necessárias
-São elas storage/logs e storage/framework, como estamos num ambiente de testes vamos dar todas as permissões, apenas execute:
-
-```sh
-chmod -R 777 storage/
-```
-
-##### Pra finalizar vamos rodar as migrations e gerar a chave da aplicação
-Caso não tenha alterado credenciais nos arquivo do docker basta rodar os comandos de sempre:
-
-```sh
-php artisan migrate
-```
-
-```sh
-php artisan key:generate
-```
 
 Pronto, agora o back-end da aplicação está funcional, basta configurar o front. (Importante deixar na mesma porta)
